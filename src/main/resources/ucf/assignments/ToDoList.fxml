@@ -1,88 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Accordion?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.DialogPane?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TitledPane?>
-<?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoList">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="256.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoListController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-      <SplitPane dividerPositions="0.17892976588628762" prefHeight="401.0" prefWidth="600.0">
+      <SplitPane dividerPositions="0.18227424749163879" prefHeight="401.0" prefWidth="600.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <ButtonBar prefHeight="40.0" prefWidth="106.0">
-                    <buttons>
-                      <Button mnemonicParsing="false" text="Button" />
-                    </buttons>
-                  </ButtonBar>
-                  <ButtonBar layoutY="359.0" prefHeight="40.0" prefWidth="104.0">
-                    <buttons>
-                      <Button mnemonicParsing="false" text="Button" />
-                    </buttons>
-                  </ButtonBar>
-                  <ButtonBar layoutY="319.0" prefHeight="40.0" prefWidth="106.0">
-                    <buttons>
-                      <Button mnemonicParsing="false" text="Button" />
-                    </buttons>
-                  </ButtonBar>
-                  <ButtonBar layoutY="279.0" prefHeight="40.0" prefWidth="106.0">
-                    <buttons>
-                      <Button mnemonicParsing="false" text="Button" />
-                    </buttons>
-                  </ButtonBar>
                   <Accordion layoutY="40.0" />
                   <Accordion layoutY="40.0" prefHeight="232.0" prefWidth="104.0">
                     <panes>
-                      <TitledPane animated="false" text="untitled 1">
+                      <TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" text="Display" textAlignment="CENTER">
                         <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="102.0">
                                  <children>
-                                    <ButtonBar layoutX="1.0" layoutY="1.0" prefHeight="46.0" prefWidth="98.0">
-                                      <buttons>
-                                        <Button mnemonicParsing="false" text="Button" />
-                                      </buttons>
-                                    </ButtonBar>
-                                    <ButtonBar layoutX="2.0" layoutY="47.0" prefHeight="40.0" prefWidth="104.0">
-                                      <buttons>
-                                        <Button mnemonicParsing="false" text="Button" />
-                                      </buttons>
-                                    </ButtonBar>
-                                    <ButtonBar layoutX="-1.0" layoutY="87.0" prefHeight="40.0" prefWidth="104.0">
-                                      <buttons>
-                                        <Button mnemonicParsing="false" text="Button" />
-                                      </buttons>
-                                    </ButtonBar>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#allItemsButtonClicked" prefHeight="54.0" prefWidth="54.0" text="All&#10;Items" textAlignment="CENTER" />
+                                    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="-7.0" layoutY="76.0" mnemonicParsing="false" onAction="#completedItemsButtonClicked" prefHeight="54.0" prefWidth="116.0" text="Completed&#10;Items" textAlignment="CENTER" />
+                                    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="137.0" mnemonicParsing="false" onAction="#incompleteItemsButtonClicked" prefHeight="54.0" prefWidth="104.0" text="Incompleted&#10;Items" textAlignment="CENTER" />
                                  </children>
                               </AnchorPane>
                         </content>
                       </TitledPane>
                     </panes>
                   </Accordion>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="353.0" mnemonicParsing="false" onAction="#deleteCurrentListButtonClicked" text="Delete Current&#10;List" textAlignment="CENTER" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="310.0" mnemonicParsing="false" onAction="#loadButtonClicked" text="Load..." textAlignment="CENTER" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="272.0" mnemonicParsing="false" onAction="#exportButtonClicked" text="Export..." textAlignment="CENTER" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="-1.0" mnemonicParsing="false" onAction="#editButtonClicked" text="Edit" textAlignment="CENTER" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <DialogPane prefHeight="53.0" prefWidth="488.0" />
                   <ScrollPane layoutY="53.0" prefHeight="345.0" prefWidth="488.0">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ButtonBar prefHeight="40.0" prefWidth="200.0">
-                                <buttons>
-                                  <Button mnemonicParsing="false" text="Button" />
-                                </buttons>
-                              </ButtonBar>
-                           </children>
-                        </AnchorPane>
-                    </content>
+                     <content>
+                        <Button mnemonicParsing="false" onAction="#addListButtonClicked" text="+" />
+                     </content>
                   </ScrollPane>
+                  <TextField fx:id="resultDisplay" prefHeight="54.0" prefWidth="488.0" />
                </children>
             </AnchorPane>
         </items>

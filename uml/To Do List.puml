@@ -2,12 +2,21 @@
 'https://plantuml.com/class-diagram
 
 class ToDoList{
-    main()
-    start()
+    + main()
+    + start()
 }
 
 class ToDoListController{
+    - resultDisplay: TextField
 
+    + addListButtonClicked
+    + editButtonClicked
+    + allItemsButtonClicked
+    + completedItemsButtonClicked
+    + incompleteItemsButtonClicked
+    + deleteCurrentListButtonClicked
+    + loadButtonClicked
+    + exportButtonClicked
 }
 
 class ListSorter {
