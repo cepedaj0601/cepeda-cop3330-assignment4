@@ -24,14 +24,6 @@ class ToDoListControllerTest {
     }
 
     @Test
-    void loadButtonClicked() {
-    }
-
-    @Test
-    void exportButtonClicked() {
-    }
-
-    @Test
     void editButtonClicked() {
     }
 

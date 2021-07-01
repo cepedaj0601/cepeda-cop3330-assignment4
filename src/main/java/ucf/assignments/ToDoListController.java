@@ -26,14 +26,6 @@ public class ToDoListController {
     }
 
     @FXML
-    public void loadButtonClicked(ActionEvent actionEvent) {
-    }
-
-    @FXML
-    public void exportButtonClicked(ActionEvent actionEvent) {
-    }
-
-    @FXML
     public void editButtonClicked(ActionEvent actionEvent) {
     }
 
