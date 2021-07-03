@@ -10,7 +10,11 @@ class ToDoListController{
     - resultDisplay: TextField
 
     + addListButtonClicked
-    + editButtonClicked
+    + exportCurrentListButtonClicked
+    + exportAllListsButtonClicked
+    + loadListButtonClicked
+    + loadMultipleListsButtonCLicked
+    + editNameButtonClicked
     + allItemsButtonClicked
     + completedItemsButtonClicked
     + incompleteItemsButtonClicked

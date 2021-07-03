@@ -26,10 +26,21 @@ public class ToDoListController {
     }
 
     @FXML
-    public void editButtonClicked(ActionEvent actionEvent) {
+    public void addListButtonClicked(ActionEvent actionEvent) {
     }
 
-    @FXML
-    public void addListButtonClicked(ActionEvent actionEvent) {
+    public void exportCurrentListButtonClicked(ActionEvent actionEvent) {
+    }
+
+    public void exportAllListsButtonClicked(ActionEvent actionEvent) {
+    }
+
+    public void loadListButtonClicked(ActionEvent actionEvent) {
+    }
+
+    public void loadMultipleListsButtonClicked(ActionEvent actionEvent) {
+    }
+
+    public void editNameButtonClicked(ActionEvent actionEvent) {
     }
 }
