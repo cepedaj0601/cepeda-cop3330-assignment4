@@ -177,6 +177,7 @@ public class ToDoListController {
         //when the newline character is detected, stop letting the user enter in characters
         //overwrite the listName variable with the new string
         //display the new string in the list name text field
+        //return the new string
     }
 
     public void addItemButtonClicked(ActionEvent actionEvent) {

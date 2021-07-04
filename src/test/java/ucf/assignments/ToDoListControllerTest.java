@@ -95,15 +95,6 @@ class ToDoListControllerTest {
     }
 
     @Test
-    void editNameButtonClicked() {
-        //create a string variable called actual
-        //
-        //create a string variable called expected
-        //
-        //call assertEquals with the parameters: expected & actual
-    }
-
-    @Test
     void addItemButtonClicked() {
         //create an int equal to the current number of nodes in the item list
         //create an int variable called actual
