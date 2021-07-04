@@ -49,6 +49,7 @@ public class ToDoListController {
         //while the number of preview windows on the grid pane is not equal to 0:
         //check the second grid pane slot (the first is taken up by the addItemButton)
         //if it is not empty, delete the item in the slot
+        //return int containing current number of preview windows
     }
 
     @FXML
@@ -83,7 +84,7 @@ public class ToDoListController {
 
     @FXML
     public void deleteCurrentListButtonClicked(ActionEvent actionEvent) {
-        //call areYousSure function
+        //call areYouSure function
         //if the return value is yes:
         //delete the listName's list node
         //redirect the previous node to point at the node after the deleted node
@@ -104,6 +105,7 @@ public class ToDoListController {
         //prompt the user for the name of the list
         //store the name in the new node that was created
         //display the name in the listName text field box
+        //return the total number of nodes in the list
         }
 
     @FXML
@@ -190,5 +192,6 @@ public class ToDoListController {
         //store the description in the  new node of the description list
         //close the prompt windows
         //display the item's due date and name in the preview window
+        //return the total number of nodes
     }
 }
