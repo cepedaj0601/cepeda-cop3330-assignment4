@@ -9,7 +9,13 @@ class ToDoList{
 class ToDoListController{
     - resultDisplay: TextField
 
-    + addListButtonClicked
+    + clearDisplay
+    + expandItem
+    + newListButtonClicked
+    + addItemButtonClicked
+    + areYouSure
+    + yesButtonIsClicked
+    + noButtonIsClicked
     + exportCurrentListButtonClicked
     + exportAllListsButtonClicked
     + loadListButtonClicked
